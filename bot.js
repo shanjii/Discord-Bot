@@ -28,6 +28,7 @@ client.on('message', msg => {
     switch (msg.content) {
         case '!game':
             playerLost = 0
+            playerWin = 0
             result = ''
             positionX = 3
             positionY = 1
