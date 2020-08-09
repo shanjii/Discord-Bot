@@ -7,8 +7,6 @@ client.on('ready', () => {
     console.log(`Keep this window running while using the bot.`);
 });
 
-
-
 //Game parameters.
 var loseText = 'You lost! type !game to restart.'
 var winText = 'You won! type !game to restart.'
