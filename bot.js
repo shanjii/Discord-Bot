@@ -13,9 +13,9 @@ client.on('ready', () => {
 var loseText = 'You lost! type !game to restart.'
 var winText = 'You won! type !game to restart.'
 var render = ''
-var player = ':red_circle:'
+var player = ':red_square:'
 var block = ':white_large_square:'
-var startMessage = 'Game has started! Use the "wasd" to navigate the grid and reach the bottom without touching the hidden mines :pogt:. \n Sometime you may spawn on top of a mine though :pogo:, cba to make an exception rule.'
+var startMessage = 'Game has started! Use the "wasd" to navigate the grid and reach the bottom without touching the hidden mines. \n Sometimes you may spawn on top of a mine though, cba to make an exception rule.'
 var bomb = ':x:'
 var mapWidth = 5
 var mapHeight = 5
@@ -171,4 +171,4 @@ function scanHorizontal() {
 }
 
 
-client.login(token.token);
+client.login(token.balana);
