@@ -15,6 +15,7 @@ var winText = 'You won! type !game to restart.'
 var render = ''
 var player = ':red_circle:'
 var block = ':white_large_square:'
+var startMessage = 'Game has started! Use the "wasd" to navigate the grid and reach the bottom without touching the hidden mines :pogt:. \n Sometime you may spawn on top of a mine though :pogo:, cba to make an exception rule.'
 var bomb = ':x:'
 var mapWidth = 5
 var mapHeight = 5
@@ -27,6 +28,7 @@ var playerWin
 client.on('message', msg => {
     switch (msg.content) {
         case '!game':
+            msg.channel.send(startMessage)
             playerLost = 0
             playerWin = 0
             result = ''
